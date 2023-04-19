@@ -5,23 +5,88 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="bgChange.css">
+        <link rel="stylesheet" href="modal.css">
         <title>Document</title>
     </head>
 
     <body>
-        <div id="bg">
+        <!-- 背景全体の要素 -->
+        <div id="bg"></div>
+
+
+
+        <!-- 画面中央のコンテンツ -->
+        <div id="main">
+            <h1>Hi. I am <span style="color : palevioletred;">mac-ya</span>.<br>
+                <span style="font-size: 1rem">Web Frontend Engineer<span>
+            </h1>
         </div>
 
 
+
+
+        <!-- 四隅のボタン -->
         <button id="top-left"></button>
         <button id="top-right"></button>
         <button id="bottom-left"></button>
         <button id="bottom-right"></button>
 
 
+        <!-- モーダルウィンドウ1 -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                    モーダルウィンドウ1<br>
+                    モーダルウィンドウ1<br>
+                    モーダルウィンドウ1<br>
+                </p>
+            </div>
+        </div>
 
-        <script src="script.js"></script>
+        <!-- モーダルウィンドウ2 -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                    モーダルウィンドウ2<br>
+                    モーダルウィンドウ2<br>
+                    モーダルウィンドウ2<br>
+                </p>
+            </div>
+        </div>
+
+        <!-- モーダルウィンドウ3 -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                    モーダルウィンドウ3<br>
+                    モーダルウィンドウ3<br>
+                    モーダルウィンドウ3<br>
+                </p>
+            </div>
+        </div>
+
+        <!-- モーダルウィンドウ4 -->
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p>
+                    モーダルウィンドウ4<br>
+                    モーダルウィンドウ4<br>
+                    モーダルウィンドウ4<br>
+                </p>
+            </div>
+        </div>
+
+
+
+        <script src="bgChange.js"></script>
+        <script src="modal.js"></script>
+
     </body>
 
 </html>
