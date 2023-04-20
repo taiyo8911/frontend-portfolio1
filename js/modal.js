@@ -11,7 +11,7 @@ buttons.forEach((btn, index) => {
         setTimeout(() => {
             const modal = modals[index];
             modal.classList.add("show");
-        }, 1500);
+        }, 500);
     });
 });
 
@@ -24,7 +24,7 @@ closes.forEach((closeBtn) => {
             document.querySelector("#main").style.display = "flex"; // #mainを表示する
             // クラスを削除して背景色を初期化
             bg.classList.remove("red", "green", "blue", "yellow");
-        }, 1500);
+        }, 500);
 
     });
 });
@@ -37,7 +37,7 @@ modals.forEach((modal) => {
             setTimeout(() => {
                 document.querySelector("#main").style.display = "flex";
                 bg.classList.remove("red", "green", "blue", "yellow");
-            }, 1500);
+            }, 500);
         }
     });
 });

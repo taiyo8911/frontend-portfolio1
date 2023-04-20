@@ -10,6 +10,7 @@
     transform-origin: center bottom;
     font-weight: bold;
     font-size: 1.5rem;
+    color: black;
 }
 
 /* 風船の線のスタイル */
@@ -92,22 +93,22 @@
 /* レスポンシブデザイン */
 @media screen and (max-width: 700px) {
     #top-left {
-        top: -200px;
-        left: -10px;
-    }
-
-    #top-right {
-        top: -120px;
-        right: 10px;
-    }
-
-    #bottom-left {
-        bottom: -100px;
+        top: -250px;
         left: 30px;
     }
 
+    #top-right {
+        top: -200px;
+        right: 50px;
+    }
+
+    #bottom-left {
+        bottom: -50px;
+        left: 50px;
+    }
+
     #bottom-right {
-        bottom: -140px;
+        bottom: -70px;
         right: 40px;
     }
 }
