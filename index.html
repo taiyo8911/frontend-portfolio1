@@ -5,87 +5,130 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="bgChange.css">
-        <link rel="stylesheet" href="modal.css">
-        <title>Document</title>
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/bg.css">
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/balloon.css">
+        <title>Portfolio1</title>
     </head>
 
     <body>
-        <!-- 背景全体の要素 -->
-        <div id="bg"></div>
+        <div id="bg">
+            <main id="main">
+                <section>
+                    <!-- 風船ボタン -->
+                    <div class="balloons">
+                        <button id="top-left">About</button>
+                        <button id="top-right">Skills</button>
+                        <button id="bottom-left">Works</button>
+                        <button id="bottom-right">Contact</button>
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Hello! I'm <span style="color : palevioletred;">MAC-YA</span>.<br>
+                        <span class="sub-text">Web Frontend Engineer<span>
+                    </h1>
+                </section>
+            </main>
 
 
-
-        <!-- 画面中央のコンテンツ -->
-        <div id="main">
-            <h1>Hi. I am <span style="color : palevioletred;">mac-ya</span>.<br>
-                <span style="font-size: 1rem">Web Frontend Engineer<span>
-            </h1>
-        </div>
-
-
-
-
-        <!-- 四隅のボタン -->
-        <button id="top-left"></button>
-        <button id="top-right"></button>
-        <button id="bottom-left"></button>
-        <button id="bottom-right"></button>
-
-
-        <!-- モーダルウィンドウ1 -->
-        <div id="modal1" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>
-                    モーダルウィンドウ1<br>
-                    モーダルウィンドウ1<br>
-                    モーダルウィンドウ1<br>
-                </p>
+            <!-- モーダルウィンドウ1 -->
+            <div id="modal1" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>About Me</h2>
+                    <p>
+                        ユーザーが楽しくなるWebづくりを意識しています。<br>
+                        直感的で気持ちのいいUI、UX。<br>
+                        親しみやすいアニメーションを心がけています。<br>
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- モーダルウィンドウ2 -->
-        <div id="modal2" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>
-                    モーダルウィンドウ2<br>
-                    モーダルウィンドウ2<br>
-                    モーダルウィンドウ2<br>
-                </p>
+            <!-- モーダルウィンドウ2 -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Skills</h2>
+                    <h3>Format</h3>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" />
+
+                    <h3>Language</h3>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original-wordmark.svg" />
+
+                    <h3>Framework</h3>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
+
+                    <h3>DB</h3>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg" />
+
+                    <h3>Middle ware</h3>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg" />
+
+                    <h3>Tools</h3>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/filezilla/filezilla-plain.svg" />
+                </div>
             </div>
-        </div>
 
-        <!-- モーダルウィンドウ3 -->
-        <div id="modal3" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>
-                    モーダルウィンドウ3<br>
-                    モーダルウィンドウ3<br>
-                    モーダルウィンドウ3<br>
-                </p>
+            <!-- モーダルウィンドウ3 -->
+            <div id="modal3" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Works</h2>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/taiyo8911" target="_blank" title="GitHubへのリンクです。">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg">
+                    </a>
+
+                    <h3>CodePen</h3>
+                    <a href="https://codepen.io/maclove1" target="_blank" title="codepenへのリンクです。">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/codepen/codepen-plain.svg" />
+                    </a>
+
+                    <h3>TechBlog</h3>
+                    <a href="https://taiyosite.com/" target="_blank" title="個人blogへのリンクです。">マック屋のウェブ開発</a>
+                    <p>
+                        Web技術に関するブログを運営しています。<br>
+                        プログラミング初心者向けの教材も作成しました。<br>
+                        <br>
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <!-- モーダルウィンドウ4 -->
-        <div id="modal4" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>
-                    モーダルウィンドウ4<br>
-                    モーダルウィンドウ4<br>
-                    モーダルウィンドウ4<br>
-                </p>
+            <!-- モーダルウィンドウ4 -->
+            <div id="modal4" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Contact</h2>
+                    <h3>Twitter</h3>
+                    <a href="https://twitter.com/taiyo8911" target="_blank" title="Twitterへのリンクです。">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg">
+                    </a>
+                    <p>
+                        ご連絡はTwitterのDMへ頂けるとありがたいです。<br>
+                    </p>
+                </div>
             </div>
+
         </div>
 
-
-
-        <script src="bgChange.js"></script>
-        <script src="modal.js"></script>
+        <script src="js/bg.js"></script>
+        <script src="js/modal.js"></script>
 
     </body>
 

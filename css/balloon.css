@@ -1,0 +1,113 @@
+/* 風船のスタイル */
+.balloons button {
+    position: absolute;
+    width: 80px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: -6px -6px 0 rgba(0, 0, 0, 0.15) inset;
+    cursor: pointer;
+    transform-origin: center bottom;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* 風船の線のスタイル */
+.balloons button:before {
+    content: '';
+    position: absolute;
+    left: 38px;
+    bottom: -70px;
+    width: 2px;
+    height: 70px;
+    background: #a0a0a0;
+    transform: rotate(10deg);
+    cursor: default;
+}
+
+
+/* 各風船のスタイル */
+#top-left {
+    top: -200px;
+    left: 100px;
+    background-color: #ED7050;
+    animation: sway 4s linear infinite;
+}
+
+#top-right {
+    top: -150px;
+    right: 50px;
+    background-color: #B7D781;
+    animation: sway2 3.25s linear infinite;
+}
+
+
+
+#bottom-left {
+    bottom: -100px;
+    left: 0;
+    background-color: #4AAEE4;
+    animation: sway2 3.75s linear infinite;
+}
+
+#bottom-right {
+    bottom: -120px;
+    right: 150px;
+    background-color: #E7E747;
+    animation: sway 3.5s linear infinite;
+    font-size: 1.3rem;
+}
+
+
+/* 風船のゆらゆらアニメーション */
+@keyframes sway {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(50px);
+    }
+}
+
+@keyframes sway2 {
+    0%, 100% {
+        transform: translateY(30px);
+    }
+
+    50% {
+        transform: translateY(100px);
+    }
+}
+
+
+#top-left:hover,
+#top-right:hover,
+#bottom-left:hover,
+#bottom-right:hover {
+    animation-play-state: paused;
+}
+
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 700px) {
+    #top-left {
+        top: -200px;
+        left: -10px;
+    }
+
+    #top-right {
+        top: -120px;
+        right: 10px;
+    }
+
+    #bottom-left {
+        bottom: -100px;
+        left: 30px;
+    }
+
+    #bottom-right {
+        bottom: -140px;
+        right: 40px;
+    }
+}

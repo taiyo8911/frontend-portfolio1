@@ -1,0 +1,80 @@
+/* 背景色をアニメーションで変化させる */
+
+/* 背景のスタイル */
+.red::after,
+.green::after,
+.blue::after,
+.yellow::after {
+    /* 親要素の中心に配置 */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.red::after {
+    background-color: #ED7050;
+    animation-name: slide_left_up;
+}
+
+.green::after {
+    background-color: #B7D781;
+    animation-name: slide_right_up;
+}
+
+.blue::after {
+    background-color: #4AAEE4;
+    animation-name: slide_left_down;
+}
+
+.yellow::after {
+    background-color: #E7E747;
+    animation-name: slide_right_down;
+}
+
+
+/* アニメーションの視点から終点までの動き */
+@keyframes slide_left_up {
+    0% {
+        transform: translate(-100%, -100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide_right_up {
+    0% {
+        transform: translate(100%, -100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide_left_down {
+    0% {
+        transform: translate(-100%, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes slide_right_down {
+    0% {
+        transform: translate(100%, 100%);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ddc9c6;
+    font-size: 2rem;
+}
+
+/* 風船と文字のコンテナ */
+#main {
+    /* ポジションを絶対位置にする */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-text {
+    font-size: 1.75rem;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 700px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .sub-text {
+        font-size: 1.25rem;
+    }
+}
