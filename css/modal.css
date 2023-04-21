@@ -76,6 +76,11 @@
 
 /* レスポンシブ */
 @media screen and (max-width: 700px) {
+    .modal-content img {
+        width: 24%;
+        padding: 10px;
+    }
+    
     .close {
         display: block;
         /* モーダルウィンドウの上に固定して配置する */
@@ -91,8 +96,7 @@
             1.5px 1.5px 0 #666,
             2px 2px 0 #666;
     }
-
-    /* モーダルウィンドウの閉じるボタンのホバー時のスタイル */
+    
     .close:hover {
         color: black;
         text-decoration: none;
