@@ -99,16 +99,16 @@
 
     #top-right {
         top: -200px;
-        right: 50px;
+        right: 30px;
     }
 
     #bottom-left {
-        bottom: -50px;
+        bottom: -110px;
         left: 50px;
     }
 
     #bottom-right {
-        bottom: -70px;
-        right: 40px;
+        bottom: -100px;
+        right: 20px;
     }
 }
