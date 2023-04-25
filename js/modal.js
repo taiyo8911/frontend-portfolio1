@@ -25,7 +25,6 @@ closes.forEach((closeBtn) => {
             // クラスを削除して背景色を初期化
             bg.classList.remove("red", "green", "blue", "yellow");
         }, 500);
-
     });
 });
 
